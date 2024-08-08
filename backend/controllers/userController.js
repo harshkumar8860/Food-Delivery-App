@@ -51,7 +51,7 @@ const userLogin = async (req, res) => {
     const isPasswordMatchingFromDb = await bcrypt.compare(password, user.password);
     // giving jwt token to the user
     if (isPasswordMatchingFromDb) {
-        const token = jsw.sign({ userId: user._id }, "randomsecret");
+        const token = jwt.sign({ userId: user._id }, "randomsecret");
         return res.status(200).json({
             user: user,
             token: token,
