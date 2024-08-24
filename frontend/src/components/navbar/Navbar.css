@@ -59,6 +59,13 @@ nav .nav-link {
   justify-content: center;
 }
 
+* img{
+  transition: transform 0.3s ease-in-out;
+}
+img:hover{
+transform: scale(1.2);
+} 
+
 .menu {
   display: none;
   background: none;

@@ -68,6 +68,28 @@
   cursor: pointer;
 }
 
+.delete-icon:active{
+  transform: translateY(4px);
+}
+.delete-icon:hover{
+  color: greenyellow;
+}
+
+.return-btn:hover{
+  background-color: crimson;
+}
+
+.return-btn:active{
+  transform: translateY(6px);
+}
+.check-btn:hover{
+  background-color: crimson;
+}
+
+.check-btn:active{
+  transform: translateY(6px);
+}
+
 .cart-item input {
   height: 25px;
   width: 30px;
